@@ -1,1 +1,0 @@
-Sync Zotero paper notes
