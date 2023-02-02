@@ -47,8 +47,19 @@ We use the following notation for model variables: latent graph embeddings $Z$ (
 ![[Screenshot 2023-01-31 at 10.50.27.png]]
 ## Experiment
 ___
-
+### Disentanglement evaluation
+#### 1. Ablation study
+The auther used 5 disentanglement metrics: β-VAE (Beta), FactorVAE (FVM), Mutual Information Gap (MIG), DCI Disentanglement, and Factor Leakage (FL)
+![[Screenshot 2023-02-02 at 10.05.48.png]]
+The hessian penalty results to be effectively enhancing disentangled representations, while the commutative penalty is less effective, and we can explain this result because the former requires the Lie algebra basis elements to have mutual products of zeros while subgroup decomposition only requires their commutators to be zeros, which also confirms the results obtained for image datasets.
+#### 2. Correlation analysis (doesn't it tells how entangled the feature are???)
+![[Screenshot 2023-02-02 at 10.37.01.png]]
+#### 3. Disentanglement results
+![[Screenshot 2023-02-02 at 11.09.57.png]]
+### Compression and few-shots classification
+### Molecular graph generation
 ## Thoughts
 ___
 1. Nothing really new in terms of theory
-2. 
+2. Good story line
+3. How do you find the application of Lie algebra here?
